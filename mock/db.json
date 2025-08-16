@@ -1,0 +1,45 @@
+{
+  "titulos": [
+    { "id": 1, "id_titulo": 1, "tx_descricao": "Bacharel" },
+    { "id": 2, "id_titulo": 2, "tx_descricao": "Mestre" },
+    { "id": 3, "id_titulo": 3, "tx_descricao": "Doutor" }
+  ],
+  "tipos-curso": [
+    { "id": 1, "id_tipo_curso": 1, "tx_descricao": "Bacharelado" },
+    { "id": 2, "id_tipo_curso": 2, "tx_descricao": "Licenciatura" },
+    { "id": 3, "id_tipo_curso": 3, "tx_descricao": "Tecnólogo" }
+  ],
+  "tipos-disciplina": [
+    { "id": 1, "id_tipo_disciplina": 1, "tx_descricao": "Obrigatória" },
+    { "id": 2, "id_tipo_disciplina": 2, "tx_descricao": "Optativa" },
+    { "id": 3, "id_tipo_disciplina": 3, "tx_descricao": "Laboratório" }
+  ],
+  "instituicoes": [
+    { "id": 1, "id_instituicao": 1, "tx_sigla": "UFSP", "tx_descricao": "Universidade Federal de São Paulo" },
+    { "id": 2, "id_instituicao": 2, "tx_sigla": "IFSP", "tx_descricao": "Instituto Federal de São Paulo" }
+  ],
+  "cursos": [
+    { "id": 1, "id_curso": 1, "id_instituicao": 1, "id_tipo_curso": 1, "tx_descricao": "Ciência da Computação" },
+    { "id": 2, "id_curso": 2, "id_instituicao": 1, "id_tipo_curso": 2, "tx_descricao": "Matemática" }
+  ],
+  "professores": [
+    { "id": 1, "id_professor": 1, "id_titulo": 2, "tx_nome": "Ana Souza", "tx_sexo": "f", "tx_estado_civil": "c", "dt_nascimento": "1980-01-10", "tx_telefone": "11999990001" },
+    { "id": 2, "id_professor": 2, "id_titulo": 1, "tx_nome": "Bruno Lima", "tx_sexo": "m", "tx_estado_civil": "s", "dt_nascimento": "1985-02-20", "tx_telefone": "11999990002" }
+  ],
+  "disciplinas": [
+    { "id": 1, "id_disciplina": 1, "id_curso": 1, "id_tipo_disciplina": 1, "tx_sigla": "ALG1", "tx_descricao": "Algoritmos I", "in_periodo": 1, "in_carga_horaria": 60 },
+    { "id": 2, "id_disciplina": 2, "id_curso": 1, "id_tipo_disciplina": 3, "tx_sigla": "LP1L", "tx_descricao": "Lab. de Programação I", "in_periodo": 1, "in_carga_horaria": 60 }
+  ],
+  "alunos": [
+    { "id": 1, "id_aluno": 1, "tx_nome": "Alice", "tx_sexo": "f", "dt_nascimento": "2000-01-01" },
+    { "id": 2, "id_aluno": 2, "tx_nome": "Bernardo", "tx_sexo": "m", "dt_nascimento": "1999-02-02" }
+  ],
+  "leciona": [
+    { "id": "1-1", "id_professor": 1, "id_disciplina": 1 },
+    { "id": "2-2", "id_professor": 2, "id_disciplina": 2 }
+  ],
+  "cursa": [
+    { "id": "1-1-2024-1", "id_aluno": 1, "id_disciplina": 1, "in_ano": 2024, "in_semestre": 1, "in_faltas": 2, "nm_nota1": 7.5, "nm_nota2": 8.0, "nm_nota3": 9.0, "bl_aprovado": true },
+    { "id": "2-2-2024-1", "id_aluno": 2, "id_disciplina": 2, "in_ano": 2024, "in_semestre": 1, "in_faltas": 0, "nm_nota1": 6.0, "nm_nota2": 7.0, "nm_nota3": 8.0, "bl_aprovado": true }
+  ]
+}
