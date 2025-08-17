@@ -5,7 +5,7 @@ const swaggerSpec = {
     version: '1.0.0',
     description: 'API REST para CRUD de entidades escolares'
   },
-  servers: [{ url: 'http://localhost:3000' }],
+  servers: [{ url: 'https://rest-escola-start-point.onrender.com' }],
   components: {
     schemas: {
       Error: {
